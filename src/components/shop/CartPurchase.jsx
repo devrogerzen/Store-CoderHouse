@@ -1,0 +1,17 @@
+import * as React from 'react';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+
+export const CartPurchase = ({total, purchaseID}) => {
+	return (
+		<Stack sx={{ width: '100%' }} spacing={2}>
+			<Alert severity='success'>
+				Gracias por su compra! <br /> 
+				Numero de factura es: {purchaseID} <br /> 
+				su Total gastado es: {total}
+			</Alert>
+		</Stack>
+	);
+};
+
+
